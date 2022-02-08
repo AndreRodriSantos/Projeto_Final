@@ -1,9 +1,11 @@
-* {
-    background-color: #ffe4c4;
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
 }
-
+.container{
+    background-color: #F21616;
+    font-family: sans-serif;
+}
 @keyframes anime {
     0% {
         transform: translateY(0);
@@ -12,22 +14,22 @@
         transform: translateY(0);
     }
     25% {
-        transform: translateY(-500px);
+        transform: translateY(-530px);
     }
     45% {
-        transform: translateY(-500px);
+        transform: translateY(-530px);
     }
     50% {
-        transform: translateY(-1000px);
+        transform: translateY(-1030px);
     }
     70% {
-        transform: translateY(-1000px);
+        transform: translateY(-1030px);
     }
     75% {
-        transform: translateY(-1500px);
+        transform: translateY(-1530px);
     }
     95% {
-        transform: translateY(-1500px);
+        transform: translateY(-1530px);
     }
     100% {
         transform: translateY(0);
@@ -40,8 +42,24 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: #0D0D0D;
 }
-
+.cabecalho img{
+    width: 8%;
+    min-width: 60px;
+}
+.cabecalho p{
+    color: white;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold
+}
+.cabecalho .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px
+}
 li {
     list-style: none;
 }
@@ -57,26 +75,35 @@ li a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
+    text-shadow: 0px 1.5px black;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.cabecalho a:hover{
+    background-color: #F21616;
 }
 
-
 .carrosel {
-    height: 500px;
+    height: 350px;
     border: 3px solid tomato;
     overflow: hidden;
     position: relative;
-    width: 400px;
+    width: 90%;
+    max-width: 800px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    margin: auto;
+    border-radius: 30px;
 }
-
 .img1 {
     position: absolute;
     animation-name: anime;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: reverse;
     top: 0;
 }
 
@@ -86,7 +113,7 @@ li a {
     animation-name: anime;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: reverse;
 }
 
 .img3 {
@@ -95,7 +122,7 @@ li a {
     animation-name: anime;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: reverse;
 }
 
 .img4 {
@@ -104,7 +131,7 @@ li a {
     animation-name: anime;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: reverse;
 }
 
 .conteudo1 {
@@ -114,22 +141,25 @@ li a {
 
 .conteudo2 {
     width: 100%;
-    margin: 20px auto;
+    margin: auto;
     padding-top: 50px;
+    text-align: center;
+    
 }
-
 .servicos img {
-    width: 400px;
-    margin: 20px auto;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
 }
-
 .servicos p {
-    background-color: black;
+    background-color: #A60A0A;
     color: white;
-    height: 100px;
+    height: 100%;
     text-align: center;
     box-sizing: border-box;
     border-radius: 10px;
+    padding-top: 40px;
+    width: 100%;
 }
 
 button {
@@ -142,11 +172,15 @@ button {
     flex-direction: column;
     align-items: center;
 }
-
 .produtos img {
-    width: 150px;
+    width: 90%;
+    border-radius: 30px;
 }
-
+button:active{
+    
+    transform: rotateZ(360deg);
+    transition: 0.5s;
+}
 .produtos {
     display: grid;
     grid-column-gap: 50px;
@@ -157,19 +191,20 @@ button {
     padding-top: 10px;
     margin-top: 20px auto;
     margin-left: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
 }
-
 .conteudo3 {
     width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
-
 .conteudo4 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  
 }
-
 .item-grid1 {
     display: inline;
     margin: 0;
@@ -187,12 +222,169 @@ button {
     grid-column: 1/2;
     grid-row: 2/3;
 }
+.Mapa{
+    margin:10px auto;
+    text-align: center;
+}
+iframe{
+    width: 90%;
+    border-radius: 30px;
+}
+.rodape{
+    height: 50px;
+    width: 100%;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+footer a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.conteudo3{
+    font-size: 20px;
+    background-color: #0D0D0D;
+    color: white;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.botao button{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 100%;
+    background-image: url("../IMg/pizza_botao.png");
+    text-shadow: 1px 1px black;
+}
+.imagem-drop{
+    width: 50%;
+    height: 100%;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+	position:relative;
+    max-width: 300px;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    
+}
+.p-drop{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    position:absolute;
+    transition: 0.5s ease-in;
+    top: 95.3%;
+    left: 0;
+}
+.imagem-drop:hover .p-drop{
+    top: 50%;
+    transition: 0.5 ease-in;
+}
 
+@media screen and (min-width: 900px) {
+    .cabecalho{
+        flex-direction: row;
+    }
+    .cabecalho p{
+        padding-top: 30px;
+    }
+    .cabecalho .logo{
+        justify-content: left;
+    }
+    .servicos{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .imagem-drop:hover .p-drop{
+        top: 70%;
+        transition: 0.5 ease-in;
+    }
+    .imagem-drop{
+        width:40%;
+        max-width: 500px;
+    }
+    .produtos {
+        grid-template-columns: repeat(2fr, 2fr, 2fr);
+        grid-template-rows: 2fr 2fr;
+    }
+    .item-grid1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .item-grid2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .item-grid3 {
+        grid-column: 3/3;
+        grid-row: 1/2;
+    }
+    footer{
+        justify-content: flex-end;
+    }
+    footer a{
+        padding: 10px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .carrosel img{
+        width: 100%;
+    }
+    .cabecalho .logo{
+        justify-content: left;
+    }
+    .imagem-drop:hover .p-drop{
+        top: 55%;
+        transition: 0.5 ease-in;
+    }
+    .cabecalho p{
+        padding-top: 30px;
+    }
+    .imagem-drop{
+        width: 20%;
+    }
+    .carrosel{
+        max-width: none;
+    }
+    .servicos{
+        flex-wrap: nowrap;
+    }
+    .produtos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .cabecalho li{
+        font-size: 30px;
+    }
+    .conteudo3{
+        font-size: 30px;
+    }
+    .conteudo3 button{
+        width: 200px;
+        height: 200px;
+        background-image: url("../IMg/pizza_botao(3).png");
+    }
+    .botao button{
+        font-size: 30px;
+    }
+}
 
 
 /*  ****************************class utilitarias**************************** */
 
-.padding-40 {
+/*.padding-40 {
     padding-top: 40px;
 }
 .margin-button{
@@ -204,4 +396,4 @@ button {
 .margen-right-5{
     margin-right: 5px;
 
-}
+}*/

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cadastro form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    margin: auto;
+}
+.cabecalho .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-bottom: 10px
+}
+.cabecalho p{
+    color: white;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold
+}
+.logo img{
+    width: 10%;
+}
+.cabecalho nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.Genero form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+#Masculino, #Feminino{
+    margin:10px;
+}
+.cadastro{
+    border: solid black;
+    width:20%;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 15%;
+    color: white;
+    background-color: black;
+}
+body{
+    background-image: url("../IMg/pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.cabecalho a:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.Logo{
+    width: 10%;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+}
+input{
+    border-radius: 10px;
+}
